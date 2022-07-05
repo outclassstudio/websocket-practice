@@ -8,7 +8,6 @@ const socket = new WebSocket(`ws://${window.location.host}`);
 function makeMessage(type, payload) {
   const msg = { type, payload };
   //!데이터통신을 할 때 무조건 string으로 넘겨야 함
-  //? [object, object]
   return JSON.stringify(msg);
 }
 
